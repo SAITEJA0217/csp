@@ -456,7 +456,7 @@ const BookingFlow = () => {
   }, [step, navigate]);
 
   const isCurrentSlotBooked = useMemo(() => {
-    return bookingData.slot && bookingData.date && bookedSlots[bookingData.date]?.includes(bookingData.slot);
+    return Boolean(bookingData.slot && bookingData.date && bookedSlots[bookingData.date]?.includes(bookingData.slot));
   }, [bookingData, bookedSlots]);
 
   const buttonText = useMemo(() => {
