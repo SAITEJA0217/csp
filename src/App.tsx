@@ -547,7 +547,7 @@ const BookingFlow = () => {
                       <label className="block text-sm font-medium dark:text-slate-300 mb-1">Section</label>
                       <select {...register('section', { required: true })} className="w-full px-4 py-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500 dark:text-white outline-none">
                         <option value="">Select Section</option>
-                        {['Alpha', 'Beta', 'Gamma', 'Delta', 'Omega', 'Sigma'].map(sec => (
+                        {['Alpha', 'Beta', 'Gamma', 'Delta', 'Omega', 'Sigma', 'Zeta', 'Epsilon'].map(sec => (
                           <option key={sec} value={sec}>{sec}</option>
                         ))}
                       </select>
